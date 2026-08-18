@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { size: A4; margin: 20mm 22mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "DejaVu Sans", Arial, sans-serif;
+    color: #1c1c1c;
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+  h1 {
+    font-size: 22pt;
+    margin: 0 0 3px 0;
+    color: #111;
+    font-weight: bold;
+  }
+  .role {
+    font-size: 12.5pt;
+    color: #333;
+    margin: 0 0 10px 0;
+  }
+  .contacts {
+    font-size: 10.3pt;
+    color: #444;
+    margin-bottom: 22px;
+  }
+  .contacts span:not(:last-child)::after {
+    content: " · ";
+    color: #999;
+  }
+  h2 {
+    font-size: 12pt;
+    color: #111;
+    margin: 20px 0 9px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #999;
+  }
+  h2:first-of-type { margin-top: 0; }
+  p { margin: 0 0 8px 0; }
+  .project { margin-bottom: 11px; }
+  .project:last-child { margin-bottom: 0; }
+  .project-title {
+    font-weight: bold;
+    font-size: 11.3pt;
+  }
+  .project-link {
+    color: #555;
+    font-size: 9.8pt;
+    font-weight: normal;
+  }
+  .project-desc { margin: 3px 0 0 0; }
+  ul.plain {
+    margin: 0;
+    padding-left: 18px;
+  }
+  ul.plain li { margin-bottom: 5px; }
+  .edu-title { font-weight: bold; }
+  .edu-sub { color: #444; font-size: 10.3pt; }
+  .skills-line { margin: 0; }
+</style>
+</head>
+<body>
+
+  <h1>Гладченко Ярослав Андреевич</h1>
+  <p class="role">Python-разработчик: боты, парсеры, автоматизация, работа с оборудованием</p>
+  <div class="contacts">
+    <span>Telegram: @Cool_pelmen228</span>
+    <span>Email: agladcenko3@gmail.com</span>
+    <span>GitHub: github.com/agladcenko</span>
+  </div>
+
+  <h2>О себе</h2>
+  <p>
+    Разрабатываю телеграм-ботов, парсеры и скрипты автоматизации на Python: интеграция
+    с внешними API, сбор данных с сайтов, базы данных, задачи по расписанию, деплой
+    на сервер как сервис с автозапуском. Отдельное направление — связка программ
+    с оборудованием (Arduino, ESP32): писал систему управления реальной квест-комнатой
+    на 16 замков. Довожу задачи до рабочего состояния, читаю чужой код и документацию,
+    не боюсь железа.
+  </p>
+
+  <h2>Проекты</h2>
+
+  <div class="project">
+    <span class="project-title">Система управления квест-комнатой</span>
+    <span class="project-link"> — github.com/agladcenko/quest-control-system</span>
+    <p class="project-desc">
+      Коммерческий проект для действующей квест-комнаты. 4 программы на Python/Pygame:
+      управление 16 замками через ESP32/Arduino по HTTP, освещение по зонам, интерактивные
+      панели для игроков. Многопоточность, мягкая деградация при отказе оборудования.
+    </p>
+  </div>
+
+  <div class="project">
+    <span class="project-title">Бот напоминаний о повторяющихся делах</span>
+    <span class="project-link"> — github.com/agladcenko/reminder-bot</span>
+    <p class="project-desc">
+      Telegram-бот на aiogram 3: планировщик с автопереносом сроков, часовые пояса
+      пользователей, сохранение задач между перезапусками. Диалог создания события
+      на конечном автомате с валидацией ввода.
+    </p>
+  </div>
+
+  <div class="project">
+    <span class="project-title">Парсер цен Steam Market</span>
+    <span class="project-link"> — github.com/agladcenko/Steam-endpoint-parser</span>
+    <p class="project-desc">
+      Сбор цен двумя способами: через JSON-эндпоинт и разбором HTML-страницы
+      с server-side rendering. Обработка лимитов запросов, повторные попытки,
+      выгрузка в Excel с числовыми форматами.
+    </p>
+  </div>
+
+  <div class="project">
+    <span class="project-title">Симулятор баллистической траектории</span>
+    <span class="project-link"> — github.com/agladcenko/ballistic-trajectory</span>
+    <p class="project-desc">
+      C++17 + SFML, метод Рунге-Кутты 4-го порядка с учётом сопротивления воздуха,
+      интерактивные графики. ~5300 строк, учебная практика по чёткому ТЗ.
+    </p>
+  </div>
+
+  <h2>Навыки</h2>
+  <p class="skills-line">
+    Python, aiogram, APScheduler, requests, BeautifulSoup, openpyxl, SQLite, C++, Arduino / ESP32, Git, Linux, systemd
+  </p>
+
+  <h2>Как работаю</h2>
+  <p>
+    Перед началом уточняю задачу и своими словами фиксирую, что именно будет сделано —
+    не начинаю работу без согласованного объёма. Называю срок и придерживаюсь его,
+    показываю промежуточный результат, а не пропадаю до сдачи. Сдаю рабочий код
+    с инструкцией по запуску. Если задача мне не по силам или требует больше времени,
+    чем изначально выглядело — говорю об этом сразу, а не по факту срыва срока.
+  </p>
+
+  <h2>Образование</h2>
+  <p class="edu-title">КубГУ, 1 курс</p>
+  <p class="edu-sub">Информационные системы и технологии</p>
+
+  <h2>Дополнительно</h2>
+  <ul class="plain">
+    <li>Веду код в git с первого дня, коммиты по смыслу</li>
+    <li>Работаю по согласованному объёму и сроку</li>
+    <li>Опыта официального трудоустройства нет</li>
+    <li>Формат работы — удалённо, полная занятость или проектная работа; самозанятость оформлена</li>
+  </ul>
+
+</body>
+</html>
